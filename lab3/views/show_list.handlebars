@@ -1,0 +1,8 @@
+<h1>All Shows</h1>
+<ul class="list-group">
+{{#each this}}
+    {{#if id}}
+    <a class="list-group-item list-group-item-action" href="/show/{{id}}">{{name}}</a>
+    {{/if}}
+{{/each}}
+</ul>

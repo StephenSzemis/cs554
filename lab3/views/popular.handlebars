@@ -1,0 +1,10 @@
+<h1>Popular Searches</h1>
+<ol class="list-group">
+{{#each this}}
+    {{#if value}}
+    <li class="list-group-item">
+        "{{key}}" was searched {{value}} times!
+    </li>
+    {{/if}}
+{{/each}}
+</ol>

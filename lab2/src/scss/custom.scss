@@ -1,0 +1,28 @@
+$primary: #0072ee;
+
+@import "./src/bootstrap/scss/bootstrap";
+
+img {
+  height: 15rem;
+  object-fit: cover;
+}
+
+$body-background: white;
+$brand-primary: darken(#999, 30%);
+$primary-font-size: 16pt;
+$card-background: lighten(#b0dfe5, 10%);
+$card-primary: darken(#5c737c, 20%);
+
+body,
+html {
+  background: $body-background;
+  color: darken($brand-primary, 20%);
+  font-family: Palatino, "Times New Roman", Times, serif;
+  font-size: $primary-font-size;
+  background-clip: border-box;
+}
+
+.card {
+  background: $card-background;
+  color: $card-primary;
+}

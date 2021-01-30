@@ -1,0 +1,21 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "Lab 3 of CS 554 Web Dev 2",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Stephen Szemis",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "handlebars": "^4.7.6",
+    "node-redis": "^0.1.7",
+    "redis": "^3.0.2"
+  }
+}

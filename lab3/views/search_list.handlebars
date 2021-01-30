@@ -1,0 +1,8 @@
+<h1>Search Results</h1>
+<ul class="list-group">
+{{#each this}}
+    {{#if show.id}}
+    <a class="list-group-item list-group-item-action" href="/show/{{show.id}} aria-label="{{show.name}}"">{{show.name}}</a>
+    {{/if}}
+{{/each}}
+</ul>

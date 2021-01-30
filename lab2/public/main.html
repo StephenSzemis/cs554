@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="/public/css/styles.min.css">
+  </head>
+  <body>
+      <h1>Stephen Szemis's Pretty Cool Movie List</h1>
+
+      <!-- Main container -->
+      <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-sm-2">
+
+              <div class="col-sm-3 col-md-2">
+                  <ul class="nav flex-row flex-sm-column">
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#fantastic">Fantastic Mr. Fox</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#babe">Babe</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#mononoke">Princess Mononoke</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#lord">Lord of the Rings: Fellowship of the Ring</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#blues">The Blues Brothers</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#men">Men in Black</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#oceans">Ocean's Eleven</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#seven">The Magnificient Seven</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#starwars">Star Wars: A New Hope</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="#tangled">Tangled</a>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="col-sm-9 col-md-10">
+              <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4">
+                  <div class="col">
+                      <div class="card h-100" id="fantastic">
+                          <img src="/public/images/mrfox.jpg" class="card-img-top" alt="Mr Fox looks at camera">
+                          <div class="card-body">
+                              <h2 class="card-title">Fantastic Mr Fox</h2>
+                              <p class="card-text">An urbane fox cannot resist returning to his farm raiding ways and then must help his community survive the farmers' retaliation.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#foxM">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-100" id="babe">
+                          <img src="/public/images/Babe.png" class="card-img-top" alt="Babe and Farmer Hoggett smile together">
+                          <div class="card-body">
+                              <h2 class="card-title">Babe</h2>
+                              <p class="card-text"> Babe, a pig raised by sheepdogs, learns to herd sheep with a little help from Farmer Hoggett.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#babeM">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-100" id="mononoke">
+                          <img src="/public/images/Mononoke.png" class="card-img-top" alt="Princess Mononoke and Ashitaka look at one another">
+                          <div class="card-body">
+                              <h2 class="card-title">Princess Mononoke</h2>
+                              <p class="card-text">On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#monodal">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-100" id="lord">
+                          <img src="/public/images/lordofrings.jpg" class="card-img-top" alt="The fellowship prepare for the journey">
+                          <div class="card-body">
+                              <h2 class="card-title">Lord of the Rings: Fellowship of the Ring</h2>
+                              <p class="card-text"> A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ringM">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-100" id="blues">
+                          <img src="/public/images/bluesbrothers.png" class="card-img-top" alt="The blues brothers sing together">
+                          <div class="card-body">
+                              <h2 class="card-title">The Blues Brothers</h2>
+                              <p class="card-text"> Jake Blues, just released from prison, puts together his old band to save the Catholic home where he and his brother Elwood were raised.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#blueM">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-100" id="men">
+                          <img src="public/images/menInBlack.png" class="card-img-top" alt="Two men in dark suits look at camera">
+                          <div class="card-body">
+                              <h2 class="card-title">Men in Black</h2>
+                              <p class="card-text">A police officer joins a secret organization that polices and monitors extraterrestrial interactions on Earth.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#menM">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-100" id="oceans">
+                          <img src="/public/images/oceans.png" class="card-img-top" alt="Danny Ocean and Rusty plan the heist">
+                          <div class="card-body">
+                              <h2 class="card-title">Ocean's Eleven</h2>
+                              <p class="card-text"> Danny Ocean and his ten accomplices plan to rob three Las Vegas casinos simultaneously.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#oceanM">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-100" id="seven">
+                          <img src="/public/images/seven.png" class="card-img-top" alt="The seven have their guns drawn">
+                          <div class="card-body">
+                              <h2 class="card-title">The Magnificent Seven</h2>
+                              <p class="card-text">Seven gunfighters are hired by Mexican peasants to liberate their village from oppressive bandits.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sevenM">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-100" id="starwars">
+                          <img src="/public/images/starwars.png" class="card-img-top" alt="The stars don't war">
+                          <div class="card-body">
+                              <h2 class="card-title">Star Wars: A New Hope</h2>
+                              <p class="card-text"> Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#starM">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-100" id="tangled">
+                          <img src="/public/images/tangled.png" class="card-img-top" alt="Rapunzel looks into eyes of a thief">
+                          <div class="card-body">
+                              <h2 class="card-title">Tangled</h2>
+                              <p class="card-text">The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time, and who she really is.</p>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tangledM">
+                                  More info
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Modals for extra info -->
+      <div class="modal fade" id="foxM" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Fantastic Mr. Fox Info</h3>
+                  </div>
+                  <div class="modal-body">
+                      <h4>Run Time:</h4>
+                      <p>87 min</p>
+                      <h4>Gross USA:</h4>
+                      <p>$21,002,919</p>
+                      <h4>Release Date:</h4>
+                      <p>2009</p>
+                      <h4>Detailed Summary:</h4>
+                      <p>
+                          Mr. Fox is an anthropomorphic, tricky, and clever fox who lives underground beside a tree with his wife and four children.
+                          In order to feed his family, he makes nightly visits to farms owned by three wicked, rude, cruel and dim-witted farmers named
+                          Boggis, Bunce and Bean, whereupon he seizes the livestock available on each man's farm. Tired of being outsmarted by Mr. Fox,
+                          the triumvirate devise a plan to ambush him as he leaves his burrow, but they succeed only in shooting off his tail.
+                      </p>
+                      <p>
+                          The three then dig up the Foxes' burrow using spades and then excavators. The Foxes manage to escape by burrowing further beneath the earth to safety.
+                          The trio are ridiculed for their persistence but they refuse to give up and vow not to return to their farms until they have caught Mr. Fox.
+                          They then choose to lay siege to the fox, surrounding Mr. Fox's hole and waiting until he is hungry enough to come out. Cornered by their enemies,
+                          Mr. Fox and his family, and all the other underground creatures that lived around the hill, begin to starve.
+                      </p>
+                      <p>
+                          After three days trapped underground, Mr. Fox devises a plot to acquire food. Working from his memory of the routes he has taken above ground,
+                          he and his children tunnel through the ground and wind up burrowing to one of Boggis' four chicken houses.
+                          Mr. Fox kills several chickens and sends his eldest son to carry the animals back home to Mrs. Fox. On the way to their next destination,
+                          Mr. Fox runs into his friend Badger and asks him to accompany him on his mission, as well as to extend an invitation to the feast to the other
+                          burrowing animals - Badger and his family, as well as the Moles, the Rabbits and the Weasels - to apologize for getting them caught up in the farmers' hunt.
+                          Aided by Badger, the animals tunnel to Bunce's storehouse for ducks, geese, hams, bacon and carrots (as noted by one of the Small Foxes,
+                          the Rabbits will require vegetables) and then to Bean's secret cider cellar. Here, they are nearly caught by the Beans' servant Mabel, and have
+                          an unpleasant confrontation with the cellar's resident, Rat. They carry their loot back home, where Mrs. Fox has prepared a great celebratory banquet
+                          for the starving underground animals and their families.
+                      </p>
+                      <p>
+                          At the table, Mr. Fox invites everyone to live in a secret underground neighbourhood with him and his family, where he will hunt
+                          for them daily and where none of them will need to worry about the farmers any more. Everyone joyfully cheers for this idea, while Boggis,
+                          Bunce, and Bean are left waiting in vain for the fox to emerge from his hole. The book ends with "And so far as I know, they are still waiting."
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="babeM" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Babe</h3>
+                  </div>
+                  <div class="modal-body">
+                      <h4>Run Time:</h4>
+                      <p>1 hour 31 min</p>
+                      <h4>Gross USA:</h4>
+                      <p>$63,658,910</p>
+                      <h4>Release Date:</h4>
+                      <p>2006</p>
+                      <h4>Detailed Summary:</h4>
+                      <p>
+                          Babe, an orphaned piglet, is chosen for a "guess the weight" contest at a county fair. The winning farmer,
+                          Arthur Hoggett, brings him home and allows him to stay with a Border Collie named Fly, her mate Rex and
+                          their puppies, in the barn.
+                      </p>
+                      <p>
+                          A duck named Ferdinand, who crows as roosters are said to every morning to wake people so he will be
+                          considered useful and be spared from being eaten, persuades Babe to help him destroy the alarm clock that
+                          threatens his mission. Despite succeeding in this, they wake Duchess, the Hoggetts' cat, and in the confusion
+                          accidentally destroy the living room. At the barn meeting, Rex sternly instructs Babe to stay away from Ferdinand
+                          (now a fugitive) and the house. Sometime later, when Fly's puppies are put up for sale, Babe asks if he can call her "Mum".
+                      </p>
+                      <p>
+                          Christmas brings a visit from the Hoggetts' relatives. Babe is almost chosen for Christmas dinner,
+                          but a duck is picked instead after Hoggett remarks to his wife Esme that Babe may bring a prize for
+                          ham at the next county fair. On Christmas Day, Babe justifies his existence by alerting Hoggett to
+                          sheep rustlers stealing sheep from one of the fields. The next day, Hoggett sees Babe sort the hens,
+                          separating the brown from the white ones. Impressed, he takes him to the fields and allows him to
+                          try to herd the sheep. Encouraged by an elder ewe named Maa, the sheep cooperate, but Rex sees Babe's
+                          actions as an insult to sheepdogs and confronts Fly in a vicious fight for encouraging Babe.
+                          He injures her leg and accidentally bites Hoggett's hand when Hoggett tries to intervene.
+                          Rex is then chained to the dog house, muzzled and sedated, leaving the sheep herding job to Babe.
+                      </p>
+                      <p>
+                          One morning, Babe is awakened by the sheep's cries and finds three dogs attacking them.
+                          Although he manages to scare them off, Maa is mortally injured and dies as a result.
+                          Hoggett arrives and, thinking that Babe killed her, prepares to shoot him. Fly is so anxious
+                          to find out whether he is guilty or innocent that, instead of barking orders at the sheep,
+                          she talks to them to find out what happened. Learning the truth, Fly barks to distract Hoggett;
+                          delayed until Esme mentions that the police say feral dogs have been killing sheep on neighboring
+                          farms and asks Hoggett why he has taken his shotgun out, he then unloads it.
+                      </p>
+                      <p>
+                          When Esme leaves on a trip, Hoggett signs Babe up for a local sheepherding competition.
+                          As it is raining the night before, Hoggett lets him and Fly into the house. However, Duchess
+                          scratches him when he tries to speak to her, so Hoggett immediately confines her outside.
+                          When she is let back in later, she gets revenge on Babe by revealing that humans eat pigs.
+                          Horrified, he runs out to the barn and learns from Fly that this is true. The next morning,
+                          Fly discovers that Babe has run away. She and Rex alert Hoggett and they all search for him.
+                          Rex finds him in a cemetery and Hoggett brings him home. However, he is still demoralized and
+                          refuses to eat. Hoggett gives him a drink from a baby bottle, sings to him "If I Had Words"
+                          and dances a jig for him. This restores Babe's faith in Hoggett's affection and he begins eating again.
+                      </p>
+                      <p>
+                          At the competition, Babe meets the sheep that he will be herding, but they ignore his
+                          attempts to speak to them. As Hoggett is criticized by the bemused judges and ridiculed
+                          by the public for using a pig instead of a dog, Rex runs back to the farm to ask the
+                          sheep what to do. They give him a secret password, first extracting a promise that he
+                          will treat them better from now on. He returns in time to convey the password to Babe,
+                          and the sheep now follow his instructions flawlessly. Amid the crowd's acclamation, he is
+                          unanimously given a perfect score. While he sits down next to the farmer, Hoggett praises
+                          him with the standard command to sheep dogs that their job is done, "That'll do, Pig. That'll do."
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="monodal" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Princess Mononoke</h3>
+                  </div>
+                  <div class="modal-body">
+                      <h4>Run Time:</h4>
+                      <p>2 hours 14 mins</p>
+                      <h4>Gross USA:</h4>
+                      <p>$4,845,631</p>
+                      <h4>Release Date:</h4>
+                      <p>1997</p>
+                      <h4>Detailed Summary:</h4>
+                      <p>
+                          In Muromachi Japan, an Emishi village is attacked by a demon. The last Emishi prince, Ashitaka,
+                          kills it before it reaches the village, but its corruption curses his right arm. The curse gives
+                          him superhuman strength, but will eventually spread through his body and kill him. The villagers
+                          discover that the demon was a boar god, Nago, corrupted by an iron ball lodged in his body. The village's
+                          wise woman tells Ashitaka that he may find a cure in the western lands Nago came from, but he cannot
+                          return to his homeland. Before Ashitaka leaves, his sister, Kaya, gives him her crystal dagger so
+                          that he will not forget her.
+                      </p>
+                      <p>
+                          Heading west, Ashitaka meets Jigo ("Jiko-bō" in the original Japanese version), an opportunist posing
+                          as a monk, who tells Ashitaka he may find help from the Great Forest Spirit, a deer-like animal god
+                          by day and a giant "nightwalker" by night. Nearby, men herd oxen to Irontown ("Tataraba" in Japanese),
+                          led by Lady Eboshi, and repel an attack by a wolf pack led by the wolf goddess Moro. Riding one of the
+                          wolves is San, a human girl. Ashitaka discovers two injured Irontown men and carries them through the
+                          forest, where he encounters many kodama and glimpses the Forest Spirit. In Irontown, Ashitaka learns
+                          that Eboshi built the town by clearcutting forests to claim ironsand and produce iron, leading to conflicts
+                          with the forest gods and Asano, a local daimyō. Irontown is a refuge for social outcasts, including
+                          lepers employed to manufacture firearms; it was one of these guns that had wounded Nago. Eboshi also
+                          explains that San was raised by the wolves as one of their own and resents humankind.
+                      </p>
+                      <p>
+                          San infiltrates Irontown to kill Eboshi, but Ashitaka intervenes, revealing the curse to the town's
+                          people and knocks Eboshi and San out cold. As Ashitaka leaves, he is unintentionally shot by a villager,
+                          but the curse gives him the strength to carry San out of the village. San awakens and prepares to kill
+                          the weakened Ashitaka, but hesitates when he tells her that she is beautiful. She takes him to the forest,
+                          and decides to trust him after the Forest Spirit saves his life. A boar clan, led by the blind boar
+                          god Okkoto, plans to attack Irontown to save the forest. Eboshi prepares for battle and sets out to
+                          kill the Forest Spirit with Jigo, who is working for the government; she intends to give the god's
+                          head to the Emperor in return for protection from Lord Asano. According to legend, the Forest
+                          Spirit's head grants immortality.
+                      </p>
+                      <p>
+                          Ashitaka recovers from his wound but remains cursed; he returns to Irontown to find it besieged by
+                          Asano's samurai, and heads out to warn Eboshi. The boar clan is annihilated in battle, and Okkoto
+                          is corrupted by his wounds. Jigo's men disguise themselves in boar skins and trick the rampaging Okkoto
+                          into leading them to the Forest Spirit. San tries to stop Okkoto, but is swept up in his demonic
+                          corruption. Moro intervenes and Ashitaka dives into the corruption, saving San. The Forest Spirit
+                          euthanizes Okkoto and Moro. As it transforms into the nightwalker, Eboshi decapitates it. It bleeds
+                          ooze which spreads over the land, killing anything it touches as the nightwalker searches for its
+                          head, which Jigo steals. The forest and kodama begin to die; Moro's head comes alive and bites
+                          off Eboshi's right arm, but she survives.
+                      </p>
+                      <p>
+                          After the samurai flee and Irontown is evacuated, Ashitaka and San pursue Jigo and retrieve the
+                          head, returning it to the Forest Spirit. The Spirit dies as the sun rises, but its form washes
+                          over the land and heals it, and Ashitaka's curse is lifted. Ashitaka stays to help rebuild
+                          Irontown, but promises San he will visit her in the forest. Eboshi reunites with the townspeople
+                          and vows to build a better town. The forest begins to regrow, and a kodama emerges from the undergrowth.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="ringM" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Lord of the Rings: Fellowship of the Ring</h3>
+                  </div>
+                  <div class="modal-body">
+                      <h4>Run Time:</h4>
+                      <p>2 hours 58 min</p>
+                      <h4>Gross USA:</h4>
+                      <p>$315,544,750</p>
+                      <h4>Release Date:</h4>
+                      <p>2001</p>
+                      <h4>Detailed Summary:</h4>
+                      <p>
+                          In the Second Age of Middle-earth, the lords of Elves, Dwarves, and Men are given Rings of Power. Unbeknownst to them, the Dark Lord Sauron forges the One Ring in Mount Doom, instilling into it a great part of his power, in order to dominate the other Rings so he might conquer Middle-earth. A final alliance of Men and Elves battles Sauron's forces in Mordor. Isildur of Gondor severs Sauron's finger and the Ring with it, thereby destroying his physical form. With Sauron's first defeat, the Third Age of Middle-earth begins. The Ring's influence corrupts Isildur, who takes it for himself. Isildur is later killed by Orcs and the Ring is lost in a river for 2,500 years until it is found by Gollum, who owns it for five centuries. The Ring is then found by a hobbit named Bilbo Baggins, who is unaware of its history.
+                      </p>
+                      <p>
+                          Sixty years later, Bilbo celebrates his 111th birthday in the Shire, reuniting with his old friend, the wizard Gandalf the Grey. Bilbo reveals that he intends to leave the Shire for one last adventure, and he leaves his inheritance, including the Ring, to his nephew Frodo. Gandalf investigates the Ring, discovers its true nature, and learns that Gollum was captured and tortured by Sauron's Orcs, revealing two words during his interrogation: "Shire" and "Baggins." Gandalf returns and warns Frodo to leave the Shire. As Frodo departs with his friend, gardener Samwise Gamgee, Gandalf rides to Isengard to meet with the wizard Saruman, but learns that he has joined forces with Sauron, who has dispatched his nine undead Nazgûl servants to find Frodo.
+                      </p>
+                      <p>
+                          Frodo and Sam are joined by fellow hobbits Merry and Pippin, and they evade the Nazgûl before arriving in Bree, where they are meant to meet Gandalf. However, Gandalf never arrives, having been taken prisoner by Saruman. The hobbits are then aided by a Ranger named Strider, who promises to escort them to Rivendell; however, they are ambushed by the Nazgûl on Weathertop, and their leader, the Witch-King, stabs Frodo with a Morgul blade. Arwen, an elf and Strider's betrothed, locates Aragorn rescues Frodo, summoning flood-waters that sweep the Nazgûl away. She takes him to Rivendell, where he is healed. Frodo meets with Gandalf, who escaped Isengard with help from Gwaihir the Great Eagle. That night, Strider reunites with Arwen, and they confirm their love for each other. Arwen's father, Lord Elrond, holds a council that decides the Ring must be destroyed in Mount Doom. Frodo volunteers to take the Ring, accompanied by Gandalf, Sam, Merry, Pippin, Elf Legolas, Dwarf Gimli, Boromir of Gondor, and Strider, who is revealed to be Aragorn, Isildur's heir and the rightful King of Gondor. Bilbo, now living in Rivendell, gives Frodo his sword, Sting.
+                      </p>
+                      <p>
+                          The Fellowship of the Ring sets off over the mountain Caradhras, but Saruman summons a storm that forces them to travel through the Mines of Moria. After finding all of the Dwarves of Moria have been slain, the Fellowship are attacked by Orcs and a cave troll. They hold them off but are confronted by Durin's Bane, a Balrog residing within the mines. Gandalf casts the Balrog into a vast chasm, but it drags him down into the darkness. The devastated Fellowship reaches Lothlórien, ruled by the Elf-queen Galadriel and her husband Celeborn. Galadriel privately informs Frodo that only he can complete the quest and that one of his friends will try to take the Ring. Meanwhile, Saruman creates an army of Uruk-hai to track down and kill the Fellowship.
+                      </p>
+                      <p>
+                          The Fellowship travels by river to Parth Galen. Frodo wanders off and is confronted by Boromir, who tries to take the Ring. The Fellowship is then ambushed by the Uruk-hai. Merry and Pippin are taken captive, and Boromir is mortally wounded by the Uruk chieftain, Lurtz. Aragorn arrives, slays Lurtz, and watches Boromir die. Afraid of the Ring corrupting his friends, Frodo decides to travel to Mordor alone, but then reconsiders by allowing Sam to come after hearing his promise from Gandalf. Aragorn, Legolas, and Gimli decide to rescue Merry and Pippin.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="blueM" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">The Blues Brothers</h3>
+                  </div>
+                  <div class="modal-body">
+                      <h4>Run Time:</h4>
+                      <p>2 hours 13 min</p>
+                      <h4>Gross USA:</h4>
+                      <p>$57,229,890</p>
+                      <h4>Release Date:</h4>
+                      <p>1980</p>
+                      <h4>Detailed Summary:</h4>
+                      <p>
+                          Blues vocalist and petty criminal "Joliet" Jake Blues is paroled on good behavior grounds from Joliet Correctional Center after serving three years of a five-year sentence, and is picked up by his blood brother Elwood in his Bluesmobile, a battered, decommissioned police car. Elwood demonstrates its capabilities by jumping an open drawbridge. The brothers visit the Roman Catholic orphanage where they were raised, and learn from Sister Mary "the Penguin" Stigmata and old friend Curtis that it will be closed unless $5,000 in property taxes is collected. Jake offers to steal the money, but Sister Mary is offended. During a sermon by the Reverend Cleophus James at the Triple Rock Baptist Church, Jake has another idea: they can re-form their band, the Blues Brothers, which disbanded while Jake was in prison, and raise the money to save the orphanage.
+                      </p>
+                      <p>
+                          That night, state troopers attempt to arrest Elwood for driving with a suspended license. After a high-speed chase through the Dixie Square Mall, the brothers flee to the flophouse where Elwood lives, miraculously escaping a rocket launcher attack by a mysterious woman. The next morning, as the police arrive at the house, the woman detonates a bomb that demolishes the building, but somehow leaves Jake and Elwood unharmed, and saves them from being apprehended.
+                      </p>
+                      <p>
+                          Jake and Elwood begin tracking down members of the band. Five of them are playing a Holiday Inn lounge as "Murph and the Magic Tones," and quickly agree to rejoin. The sixth member, "Mr. Fabulous", turns them down as he is the maître d' at expensive restaurant "Chez Paul", but the brothers behave obnoxiously in the restaurant until he relents. On their way to meet the final two band members, the brothers find the road through Jackson Park blocked by an "American Socialist White People's Party"—"the Illinois Nazis"—demonstration on a bridge. It is mentioned that "The Nazis" won their court case, likely a reference to The Skokie Affair. Elwood runs them off the bridge, forcing them to jump into the East Lagoon. The commander orders a subordinate to record the car's license number. Meanwhile, the last two band members, Matt "Guitar" Murphy and "Blue Lou" Marini, who now work in a soul food restaurant, rejoin the band against the advice of Murphy's wife and restaurant owner, Aretha Franklin. The reunited group obtain instruments and equipment from Ray's Music Exchange in Calumet City, and Ray, "as usual", takes an IOU.
+                      </p>
+                      <p>
+                          As Jake attempts to book a gig, the mystery woman blows up the phone booth he and Elwood are using; once again, they are miraculously unhurt. The band stumbles into a gig at Bob's Country Bunker, a local honky-tonk. They win over the rowdy crowd, but run up a bar tab higher than their pay, and infuriate the country band that was actually booked there, the Good Ole Boys.
+                      </p>
+                      <p>
+                          Realizing that they need one big show to raise the necessary money, the brothers persuade their old agent to book the Palace Hotel Ballroom, north of Chicago. They mount a loudspeaker atop the Bluesmobile and drive the Chicago area promoting the concert, but in the process alert the police, the Nazis, and the Good Ole Boys of their whereabouts. The ballroom is packed with blues fans, cops, and the Good Ole Boys. Jake and Elwood perform two songs, then sneak offstage, as the tax deadline is rapidly approaching. A record company executive offers them a $10,000 cash advance on a recording contract—more than enough to pay off the orphanage's taxes and Ray's IOU—and then shows them how to slip out of the building unnoticed. As they make their escape via a service tunnel, they are confronted by the mystery woman: Jake's vengeful ex-fiancée. After her volley of M16 rifle bullets leaves them miraculously unharmed, Jake offers a series of ridiculous excuses that she accepts, allowing the brothers to escape to the Bluesmobile.
+                      </p>
+                      <p>
+                          Jake and Elwood race back toward Chicago with dozens of state/local police and the Good Ole Boys in pursuit. They eventually elude them all with a series of improbable maneuvers, including a miraculous gravity-defying escape from the Illinois Nazis. At the Richard J. Daley Center, they rush inside the adjacent Chicago City Hall building, soon followed by hundreds of police, state troopers, SWAT teams, firefighters, Illinois National Guardsmen, and the Military Police. Finding the office of the Cook County Assessor (played by Steven Spielberg), the brothers pay the tax bill. Just as their receipt is stamped, they are arrested by the mob of law officers. In prison, the band plays "Jailhouse Rock" for the inmates.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="menM" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Men in Black</h3>
+                  </div>
+                  <div class="modal-body">
+                      <h4>Run Time:</h4>
+                      <p>1 hour 38 min</p>
+                      <h4>Gross USA:</h4>
+                      <p>$250,690,539</p>
+                      <h4>Release Date:</h4>
+                      <p>1997</p>
+                      <h4>Detailed Summary:</h4>
+                      <p>
+                          After a government agency makes first contact with aliens in 1961, alien refugees live in secret on Earth by disguising themselves as humans. Men in Black (MIB) is a secret agency that polices these aliens, protects Earth from extraterrestrial threats and uses memory-erasing neuralyzers to keep alien activity a secret. MIB agents have their former identities erased while retired agents are neuralyzed. After an operation to arrest an alien criminal named Mikey near the Mexican border by Agents K and D, the latter decides that he is too old for his job, prompting the former to neuralyze him so he can retire.
+                      </p>
+                      <p>
+                          Meanwhile, NYPD undercover officer James Darrell Edwards III pursues an unnaturally fast and agile suspect into the Solomon R. Guggenheim Museum. Impressed, K interviews James about his encounter, then neuralyzes him and leaves him a business card with an address. Edwards goes to the address and undergoes a series of tests, for which he finds unorthodox solutions, including a rational hesitation in a targeting test. While the other candidates, who are military-grade, are neuralyzed, K offers Edwards a position with the MIB. Edwards accepts and his identity and civilian life are erased as he becomes Agent J.
+                      </p>
+                      <p>
+                          In upstate New York, an alien illegally crash-lands on Earth, kills a farmer named Edgar and uses his skin as a disguise. Tasked with finding a device called "The Galaxy", the Edgar alien goes into a New York restaurant and finds two aliens (disguised as humans) who are supposed to have it in their possession. He kills them and takes a container from them but is angered to find only diamonds inside. After learning about the incident in a tabloid magazine, K investigates the crash landing and concludes that Edgar's skin was taken by a "bug", a species of aggressive cockroach-like aliens. He and J head to a morgue to examine the bodies the bug killed. Inside one body (which turns out to be a piloted robot) they discover a dying Arquillian alien, who says that "to prevent war, the galaxy is on Orion's belt". The alien, who used the name Rosenberg, was a member of the Arquillian royal family; K fears his death may spark a war.
+                      </p>
+                      <p>
+                          MIB informant Frank the Pug explains that the missing galaxy is a massive energy source housed in a small jewel. J deduces that the galaxy is hanging on the collar of Rosenberg's cat, Orion, which refuses to leave the body at the morgue. J and K arrive just as the bug takes the galaxy and kidnaps the coroner, Laurel Weaver. Meanwhile, an Arquillian battleship fires a warning shot in the Arctic and delivers an ultimatum to the MIB: return the galaxy within a "galactic standard week", in an hour of Earth time, or they will destroy Earth.
+                      </p>
+                      <p>
+                          The bug arrives at the observation towers of the 1964 New York World's Fair New York State Pavilion at Flushing Meadows, which disguise two real flying saucers. Once there, Laurel escapes the bug's clutches when it accidentally drops her. It activates one of the saucers and tries to leave Earth, but K and J shoot it down and the ship crashes into the Unisphere. The bug sheds Edgar's skin and swallows J and K's guns. K provokes it until he too is swallowed. The bug tries to escape on the other ship, but J slows it down by taunting it and crushing cockroaches, angering it. K blows the bug apart from the inside, having found his gun inside its stomach. J and K recover the galaxy and relax, thinking the whole ordeal over, only for the still living upper half of the bug to pounce on them from behind, but Laurel kills it with J's gun.
+                      </p>
+                      <p>
+                          At the MIB headquarters, K tells J that he has not been training him as a partner, but a replacement. K bids J farewell before J neuralyzes him at his request; K returns to his civilian life, and Laurel becomes J's new partner, L.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="oceanM" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Ocean's Eleven</h3>
+                  </div>
+                  <div class="modal-body">
+                      <h4>Run Time:</h4>
+                      <p>1 hour 56 min</p>
+                      <h4>Gross USA:</h4>
+                      <p>$183,417,150</p>
+                      <h4>Release Date:</h4>
+                      <p>2001</p>
+                      <h4>Detailed Summary:</h4>
+                      <p>
+                          Following his release from prison, Danny Ocean violates his parole by traveling to California to meet his partner-in-crime and friend Rusty Ryan to propose a heist. The two go to Las Vegas to pitch the plan to wealthy friend and former casino owner Reuben Tishkoff. The plan consists of simultaneously robbing the Bellagio, the Mirage, and the MGM Grand casinos. Reuben's familiarity with casino security makes him very reluctant to get involved, but when he starts to think of it as a good way to get back at his rival, Terry Benedict, who owns all three casinos, Reuben agrees to finance the operation. Because the casinos are required by the Nevada Gaming Commission to have enough cash on hand to cover all their patrons' bets, the three predict that on the upcoming night of a highly anticipated boxing match, the Bellagio vault will contain more than $160,000,000.
+                      </p>
+                      <p>
+                          Danny and Rusty recruit eight former colleagues and criminal specialists: Linus Caldwell, a young and talented pickpocket; Frank Catton, a casino worker and con man; Virgil and Turk Malloy, a pair of gifted mechanics; Livingston Dell, an electronics and surveillance expert; Basher Tarr, an explosives expert; Saul Bloom, an elderly con man; and "The Amazing" Yen, an accomplished acrobat. Several team members carry out reconnaissance at the Bellagio to learn as much as possible about the security, the routines, the behaviors of the casino staff, and the building itself. Other members create a precise replica of the vault with which to practice maneuvering through its formidable security systems. During this planning phase, the team discovers that Danny's ex-wife, Tess, is Benedict's girlfriend. Rusty urges Danny to give up on the plan, believing Danny incapable of sound judgment while Tess is involved, but Danny refuses.
+                      </p>
+                      <p>
+                          On the night of the fight, the plan is put into motion. Danny shows up at the Bellagio purposely to be seen by Benedict, who, as predicted, locks him in a storeroom with Bruiser, a bouncer. However, Bruiser is on Danny's payroll and allows him to access the vent system and join his team as they seize the vault, coincident with activities of their other team members in and around the casino. Rusty calls Benedict on a cell phone Danny dropped in Tess's coat earlier and tells him that unless he lets them have half of the money in the vault, they will blow it up; Benedict sees video footage confirming Rusty's claim. Benedict complies, having his bodyguards take the loaded duffel bags to a waiting van driven by remote control. Benedict has his men follow the van, while he calls in a SWAT team to try to secure the vault. The SWAT team's arrival causes a shootout that sets off the explosives and incinerates the remaining cash. After affirming the premises otherwise secure, the SWAT team collects their gear and departs.
+                      </p>
+                      <p>
+                          As Benedict arrives to examine the ruined vault himself, his men stop the van and find the bags were only loaded with flyers for prostitutes. Benedict studies the video footage and recognizes that the flooring in the vault on the video lacks the Bellagio logo, which had been added only recently to the vault. It is shown that Danny's team used their practice vault to create fake footage to fool Benedict. Furthermore, they themselves were the SWAT team and used their gear bags to take all of the money from the vault right under Benedict's nose. Benedict goes to see that Danny has seemingly been locked up in the storeroom throughout the heist and thus innocent of any crime. As Tess watches via CCTV, Danny tricks Benedict into saying he would give up Tess in exchange for the money. Benedict, unsatisfied with Danny's plan to get back the money, orders his men to escort Danny off the premises and inform the police that he is violating his parole by being in Las Vegas. Tess leaves Benedict and exits the hotel just in time to see Danny arrested. The rest of the team bask in the victory in front of the Fountains of the Bellagio, silently going their separate ways one-by-one. When Danny is released after serving time for his parole violation, he is met by Rusty and Tess. They drive off, closely followed by Benedict's bodyguards.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="sevenM" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">The Magnificent Seven</h3>
+                  </div>
+                  <div class="modal-body">
+                      <h4>Run Time:</h4>
+                      <p>2 hours 8 min</p>
+                      <h4>Gross USA:</h4>
+                      <p>Not Listed</p>
+                      <h4>Release Date:</h4>
+                      <p>1960</p>
+                      <h4>Detailed Summary:</h4>
+                      <p>
+                          A gang of bandits led by Calvera (Eli Wallach) periodically raids a poor Mexican village for food and supplies. After the latest raid, during which Calvera kills a villager, the village leaders decide they have had enough. On the advice of the village elder (Vladimir Sokoloff), they decide to fight back. Taking their few objects of value, three villagers ride to a town just inside the United States border hoping to barter for weapons. They are impressed by Chris Adams (Yul Brynner), a veteran Cajun gunslinger, and approach him for advice. Chris suggests they instead hire gunfighters to defend the village, as "men are cheaper than guns." At first agreeing only to help them recruit men, Chris eventually decides to lead the group. Despite the meager pay offered, he finds five willing gunmen.
+                      </p>
+                      <p>
+                          They are the gunfighter Vin Tanner (Steve McQueen), who has gone broke after a round of gambling and resists local efforts to recruit him as a store clerk; Chris's friend Harry Luck (Brad Dexter), who assumes Chris is hiding a much bigger reward for the work; the Irish Mexican Bernardo O'Reilly (Charles Bronson), who has fallen on hard times; Britt (James Coburn), an expert in both knife and gun who joins purely for the challenge involved; and the dapper, on-the-run gunman Lee (Robert Vaughn), plagued by nightmares of fallen enemies and haunted that he has lost his nerve for battle. On their way to the village they are trailed by the hotheaded Chico (Horst Buchholz), an aspiring gunfighter whose previous attempts to join Chris had been spurned. Impressed by his persistence, Chris invites him into the group.
+                      </p>
+                      <p>
+                          Arriving at the village, they work with the villagers to build fortifications and train them to defend themselves. They note the lack of women in the village, until Chico stumbles upon Petra (Rosenda Monteros) and discovers the women were hidden in fear that the gunmen would rape them. The gunmen begin to bond with the villagers, and Petra pursues Chico. When Bernardo points out that the gunmen are being given the choice food, the gunmen share it with the village children.
+                      </p>
+                      <p>
+                          Three of Calvera's men are dispatched to reconnoiter the village; due to a mistake by Chico the seven are forced to kill all three rather than capture at least one. Some days later Calvera and his bandits arrive in force. The seven and the villagers kill another eight of their cohort in a shootout and run them out of town. The villagers celebrate, believing Calvera will not return. But Chico infiltrates Calvera's camp and learns that Calvera must return, as his men are short of food.
+                      </p>
+                      <p>
+                          Some fearful villagers thereupon call for the gunfighters to leave. Even some of the seven waver, but Chris insists that they stay, even threatening to kill anyone who suggests giving up the fight. The seven ride out to make a surprise raid on Calvera's camp, but find it abandoned. Returning to the village, they are caught by Calvera and his men, who have colluded with some of the villagers to sneak in and take control. Calvera spares the seven's lives, believing they have learned the simple farmers are not worth fighting for, and fearing reprisals from the gunfighters' "friends" across the border. Preparing to depart, Chris and Vin admit they have become emotionally attached to the village. Bernardo likewise gets angry when the boys he befriended call their parents cowards. Chico declares that he hates the villagers; when Chris points out he grew up as a farmer as well, Chico angrily responds that it is men like Calvera and Chris who made the villagers what they are.
+                      </p>
+                      <p>
+                          The seven gunmen are escorted some distance from the village, where their weapons are returned to them. They debate their next move and all but Harry, who believes the effort will be futile and suicidal, agree to return and fight.
+                      </p>
+                      <p>
+                          The gunmen infiltrate the village and a gunfight breaks out. Harry, who has had a change of heart, returns in time to save Chris's life, but is himself fatally shot. Harry pleads to know what they were fighting for, and Chris lies about a hidden gold mine to let Harry believe he died for a fortune; Harry smiles before dying. Lee finds the nerve to burst into a house where several villagers are being held, shooting their captors and releasing the prisoners to join the fight, but is gunned down as he leaves the house. Bernardo, shot protecting the boys he befriended, tells them as he dies to see how bravely their fathers fought. Britt dies after shooting at many bandits but exposing himself from cover. Chris shoots Calvera, who asks him, "You came back... to a place like this? Why? A man like you? Why?" He dies without receiving an answer. The remaining bandits take flight.
+                      </p>
+                      <p>
+                          The three surviving gunmen ride out of town. As they stop atop a hill overlooking the village, Chico parts company with them, realizing he wants to stay with Petra. Chris and Vin bid farewell to the village elder, who tells them that only the villagers have really won, whereas the gunslingers are "like the wind, blowing over the land and passing on." As they pass the graves of their fallen comrades, Chris admits, "The Old Man was right. Only the farmers won. We lost. We'll always lose."
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="starM" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Star Wars: A New Hope</h3>
+                  </div>
+                  <div class="modal-body">
+                      <h4>Run Time:</h4>
+                      <p>2 hours 1 min</p>
+                      <h4>Gross USA:</h4>
+                      <p>$460,998,507</p>
+                      <h4>Release Date:</h4>
+                      <p>1977</p>
+                      <h4>Detailed Summary:</h4>
+                      <p>
+                          The galaxy is in a period of civil war. Rebel spies have stolen plans to the Galactic Empire's Death Star, a moon-sized space station capable of destroying an entire planet. Princess Leia, secretly one of the Rebellion's leaders, has obtained its schematics, but her starship is intercepted by an Imperial Star Destroyer under the command of the ruthless Sith Lord Darth Vader, an agent to the Empire. Before she is captured, Leia hides the plans in the memory of astromech droid R2-D2, who, along with protocol droid C-3PO, flees in an escape pod to the desert planet Tatooine.
+                      </p>
+                      <p>
+                          The droids are captured by Jawa traders, who sell them to moisture farmers Owen and Beru Lars and their nephew Luke Skywalker. While cleaning R2-D2, Luke accidentally triggers part of a holographic recording of Leia, in which she requests help from Obi-Wan Kenobi. The only Kenobi whom Luke knows is “Old Ben” Kenobi, an elderly hermit. He asks his uncle if he knows anything, but his uncle curtly drops the subject. The next morning, Luke finds R2-D2 missing, and while searching for him, encounters Old Ben. Ben, who reveals his true name to be Obi-Wan, tells Luke of his days as a Jedi Knight, former peacekeepers of the Galactic Republic who derived their power from an energy field called the Force until they were wiped out by the Galactic Empire. Contrary to what his uncle has told him, Luke learns that his father fought alongside Obi-Wan as a Jedi Knight until Vader, a former pupil of Obi-Wan's, turned to the dark side of the Force and murdered him. Obi-Wan presents Luke with his father's old weapon, a lightsaber.
+                      </p>
+                      <p>
+                          R2-D2 plays Leia's message for Obi-Wan, in which she begs him to take the Death Star plans to her home planet of Alderaan and give them to her father for analysis. Obi-Wan invites Luke to accompany him to Alderaan and learn the ways of the Force, but Luke declines, saying his aunt and uncle need him. Returning home, however, he finds Imperial stormtroopers have killed his aunt and uncle and destroyed their farm in their search for the droids, leaving Luke no choice but to accept Obi-Wan's invitation. They travel to a cantina in Mos Eisley, where they hire smuggler Han Solo to transport them. Han is intercepted by Greedo, a bounty hunter working for local mobster Jabba the Hutt, to whom Han owes money; the confrontation ends with Han killing Greedo. Obi-Wan, Luke, R2-D2 and C-3PO flee Tatooine, with Han and his Wookiee co-pilot Chewbacca on their ship the Millennium Falcon.
+                      </p>
+                      <p>
+                          Death Star commander Grand Moff Tarkin orders the destruction of Alderaan, Leia's home planet, using the Death Star's superlaser as a show of force.[7] The Falcon crew discovers the planet's remains and is captured by the Death Star's tractor beam, which Obi-Wan goes to disable. Luke discovers that Leia is imprisoned on the Death Star and scheduled to be executed, and rescues her with the help of Han and Chewbacca in a swashbuckling series of escapes. His task accomplished, Obi-Wan sees that the others need a distraction to board the Falcon, and sacrifices himself in a lightsaber duel with Darth Vader. They depart the hangar but are caught up by four Imperial TIE starfighters which they fight off. Using a tracking beacon placed on the Falcon, the Imperials follow the rebels to the hidden base on Yavin 4.
+                      </p>
+                      <p>
+                          Leia's schematics show that the Death Star might be destroyed by firing torpedoes into a two-meter-wide thermal exhaust port that directly leads into its reactor, triggering a chain reaction. Han collects a reward for his role in Leia's rescue, intending to leave and repay Jabba. Luke joins the Rebel squadron in a desperate attack against the approaching Death Star. In the ensuing battle, the Rebels suffer heavy losses in several unsuccessful runs. Vader leads a squadron of TIE fighters and prepares to attack Luke's X-wing, but Han returns and attacks the Imperial fighters, sending Vader spiraling into space. Guided by Obi-Wan's spirit, Luke turns off his targeting computer and uses the Force to guide the torpedoes into the exhaust port. The Death Star explodes just before it can fire on the Rebel base, killing Tarkin and the Imperial troops onboard. In a triumphant ceremony at the base, Leia awards Luke and Han medals for their heroism.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="tangledM" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Tangled</h4>
+                  </div>
+                  <div class="modal-body">
+                      <h5>Run Time:</h5>
+                      <p>1 hour 40 min</p>
+                      <h5>Gross USA:</h5>
+                      <p>$200,821,936</p>
+                      <h5>Release Date:</h5>
+                      <p>2010</p>
+                      <h5>Detailed Summary:</h5>
+                      <p>
+                          Long ago, a drop of liquid sunlight sprouted a magical healing flower. For centuries, Mother Gothel used the flower to retain her youth, until soldiers from a nearby kingdom plucked it to heal their ailing and pregnant queen. Shortly afterward, the Queen gives birth to Princess Rapunzel, whose golden hair contains the flower's healing properties. Gothel tries to steal a lock of Rapunzel's hair to use the power once again but discovers that cutting the hair renders it inert. She instead abducts Rapunzel and raises her as her own in a secret tower. In order to keep the confined, isolated Rapunzel content, Gothel teaches her to fear the outside world and its people. Each year, the King and Queen release sky lanterns on Rapunzel's birthday, hoping for their daughter to see them and return.
+                      </p>
+                      <p>
+                          On the eve of her 18th birthday, Rapunzel asks to leave the tower and discover the lanterns' source, but Gothel refuses. Meanwhile in the kingdom, a thief named Flynn Rider steals Rapunzel's intended crown from the palace and ditches his partners, the Stabbington brothers, while fleeing. He takes refuge with the crown in Rapunzel's tower, but Rapunzel knocks him unconscious and hides him in the closet. Gothel returns, and Rapunzel tries to show Flynn to her to demonstrate her readiness for the "dangerous" outside world. However, Gothel still dismisses her.
+                      </p>
+                      <p>
+                          Rapunzel sends Gothel away on a three-day journey to acquire paints. With Gothel gone, Rapunzel hides the crown from Flynn and leverages it to convince him to escort her to see the lanterns for her birthday. Along the way, Flynn brings Rapunzel to the Snuggly Duckling, a pub filled with menacing thugs, who initially try to capture the wanted Flynn but instead, are charmed by Rapunzel. Meanwhile, Gothel comes upon Maximus, a palace horse determined to capture Flynn. Recognizing that kingdom guards may be closing in on her hidden tower, she returns to check on Rapunzel. She discovers her gone and Flynn's satchel with stolen crown there instead and goes after the pair.
+                      </p>
+                      <p>
+                          Royal soldiers led by Maximus arrive at the pub in search of Flynn. Rapunzel and Flynn escape but are trapped in a flooding cave. Resigned to their fate, Flynn reveals his real name, Eugene Fitzherbert, and Rapunzel reveals that her hair glows when she sings. They use the light to escape the cave and take refuge in the forest. That night, Gothel, now in league with the Stabbingtons, gives the crown to Rapunzel and suggests using it to test Eugene's loyalty.
+                      </p>
+                      <p>
+                          In the morning, Maximus finds the pair and tries to arrest Flynn, but Rapunzel demands a truce in honor of her birthday. The group reach the kingdom and enjoy the birthday festivities, culminating in an evening cruise as the lanterns are released. There, Rapunzel gives Eugene the crown after fulfilling her dream of seeing the lanterns in person. They confess their love and are about to kiss when Eugene notices the Stabbingtons on the shore. He leaves Rapunzel to give them the crown as an apology, but they assault him and tie him to a boat headed for the palace. Eugene is detained while the brothers convince Rapunzel that Eugene has abandoned her. Gothel stages a rescue and returns with Rapunzel to the tower.
+                      </p>
+                      <p>
+                          There, Rapunzel suddenly recognizes the symbol of the kingdom, which she had subconsciously incorporated into her paintings over the years. Realizing that she is the long-lost princess for whom the lanterns are sent, she confronts Gothel. At the same time, Maximus and the Duckling thugs help Eugene escape captivity, and Maximus rushes him back to Gothel's tower. Eugene enters by climbing Rapunzel's hair, only to find Rapunzel chained and gagged. Gothel stabs Eugene and tries to flee with Rapunzel. Rapunzel agrees to go willingly if she is allowed to heal Eugene first. Wanting her to be free, Eugene cuts off her hair, which turns brown and loses its magic, causing Gothel to age rapidly and fall to her death.
+                      </p>
+                      <p>
+                          Rapunzel mourns for Eugene, heartbroken, and one of her tears, still containing the flower's magic, lands on his cheek and restores his life. The two return to the kingdom where Rapunzel reunites with her royal, real parents and happily marries Eugene.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Script for bootstrap -->
+      <script src="/public/js/vendor.min.js"></script>
+
+     
+  </body>
+</html>
